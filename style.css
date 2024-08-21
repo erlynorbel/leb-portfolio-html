@@ -5,37 +5,47 @@
 
 body {
   background: whitesmoke;
-  margin-bottom: 9000px;
+  margin: 0;
+  margin-bottom: 1000px;
+}
+
+.body-section-wrapper {
+  display: flex;
+}
+
+.topbar {
+  display: flex;
+  width: 100%;
+  background-color: black;
+}
+
+.topbar p {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.hero-image,
+.info-leb {
+  flex-grow: 1;
 }
 
 .hero-section-wrapper {
   margin: 0;
   padding: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100%;
-  box-shadow: #292d32;
-  border: 5% #292d32;
-}
-
-.info-leb {
-  margin-left: 21%;
 }
 
 .hero-image {
-  width: 44rem;
-  height: 44rem;
-  flex-shrink: 0;
-  margin-top: 10%;
-  margin-left: 5%;
+  padding-bottom: 9vh;
 }
 
 .hero-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20%;
+  padding-top: 10%;
+  padding-left: 5%;
   stroke-width: 100px;
 }
 
@@ -43,7 +53,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background: #f8f9fa;
+  background: radial-gradient(50% 50% at 50% 50%, #fa7f7f 0%, #fff 71%);
 }
 
 .name-info {
@@ -95,11 +105,12 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 20px;
+  bottom: 2px;
+  height: 20%;
 }
 
 .navbar {
-  width: 50%;
+  width: 40%;
   height: 100px;
   background: red;
   border-radius: 20px;
@@ -108,10 +119,23 @@ body {
 }
 
 .navbar-item {
-  padding-top: 10px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-button svg {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-button {
+  display: flex;
+
+  padding: 10px;
+  border-radius: 20%; /* To make the button round */
 }
